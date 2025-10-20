@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnTrangChu = new System.Windows.Forms.Panel();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnHeThong = new System.Windows.Forms.Button();
             this.btnKhoHang = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             // pnTrangChu
             // 
             this.pnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pnTrangChu.Controls.Add(this.btnDangXuat);
             this.pnTrangChu.Controls.Add(this.btnHeThong);
             this.pnTrangChu.Controls.Add(this.btnKhoHang);
             this.pnTrangChu.Controls.Add(this.btnSanPham);
@@ -57,8 +59,24 @@
             this.pnTrangChu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnTrangChu.Location = new System.Drawing.Point(0, 0);
             this.pnTrangChu.Name = "pnTrangChu";
-            this.pnTrangChu.Size = new System.Drawing.Size(220, 550);
+            this.pnTrangChu.Size = new System.Drawing.Size(235, 550);
             this.pnTrangChu.TabIndex = 0;
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnDangXuat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDangXuat.FlatAppearance.BorderSize = 0;
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.ForeColor = System.Drawing.Color.Black;
+            this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 374);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(235, 48);
+            this.btnDangXuat.TabIndex = 9;
+            this.btnDangXuat.Text = "Đăng Xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = false;
             // 
             // btnHeThong
             // 
@@ -69,9 +87,9 @@
             this.btnHeThong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHeThong.ForeColor = System.Drawing.Color.Black;
             this.btnHeThong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHeThong.Location = new System.Drawing.Point(0, 350);
+            this.btnHeThong.Location = new System.Drawing.Point(0, 326);
             this.btnHeThong.Name = "btnHeThong";
-            this.btnHeThong.Size = new System.Drawing.Size(220, 54);
+            this.btnHeThong.Size = new System.Drawing.Size(235, 48);
             this.btnHeThong.TabIndex = 7;
             this.btnHeThong.Text = "Hệ Thống";
             this.btnHeThong.UseVisualStyleBackColor = false;
@@ -85,9 +103,9 @@
             this.btnKhoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhoHang.ForeColor = System.Drawing.Color.Black;
             this.btnKhoHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhoHang.Location = new System.Drawing.Point(0, 296);
+            this.btnKhoHang.Location = new System.Drawing.Point(0, 278);
             this.btnKhoHang.Name = "btnKhoHang";
-            this.btnKhoHang.Size = new System.Drawing.Size(220, 54);
+            this.btnKhoHang.Size = new System.Drawing.Size(235, 48);
             this.btnKhoHang.TabIndex = 6;
             this.btnKhoHang.Text = "Kho Hàng";
             this.btnKhoHang.UseVisualStyleBackColor = false;
@@ -102,9 +120,9 @@
             this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.Black;
             this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanPham.Location = new System.Drawing.Point(0, 242);
+            this.btnSanPham.Location = new System.Drawing.Point(0, 230);
             this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Size = new System.Drawing.Size(220, 54);
+            this.btnSanPham.Size = new System.Drawing.Size(235, 48);
             this.btnSanPham.TabIndex = 5;
             this.btnSanPham.Text = "Sản Phẩm";
             this.btnSanPham.UseVisualStyleBackColor = false;
@@ -118,9 +136,9 @@
             this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoaDon.ForeColor = System.Drawing.Color.Black;
             this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoaDon.Location = new System.Drawing.Point(0, 188);
+            this.btnHoaDon.Location = new System.Drawing.Point(0, 182);
             this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.Size = new System.Drawing.Size(220, 54);
+            this.btnHoaDon.Size = new System.Drawing.Size(235, 48);
             this.btnHoaDon.TabIndex = 4;
             this.btnHoaDon.Text = "Hoá Đơn";
             this.btnHoaDon.UseVisualStyleBackColor = false;
@@ -136,10 +154,11 @@
             this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhachHang.Location = new System.Drawing.Point(0, 134);
             this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(220, 54);
+            this.btnKhachHang.Size = new System.Drawing.Size(235, 48);
             this.btnKhachHang.TabIndex = 3;
             this.btnKhachHang.Text = "Khách Hàng";
             this.btnKhachHang.UseVisualStyleBackColor = false;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnBanHang
             // 
@@ -152,7 +171,7 @@
             this.btnBanHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBanHang.Location = new System.Drawing.Point(0, 80);
             this.btnBanHang.Name = "btnBanHang";
-            this.btnBanHang.Size = new System.Drawing.Size(220, 54);
+            this.btnBanHang.Size = new System.Drawing.Size(235, 54);
             this.btnBanHang.TabIndex = 2;
             this.btnBanHang.Text = "Bán Hàng";
             this.btnBanHang.UseVisualStyleBackColor = false;
@@ -165,7 +184,7 @@
             this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrangChu.ForeColor = System.Drawing.Color.White;
             this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu.Location = new System.Drawing.Point(0, 80);
+            this.btnTrangChu.Location = new System.Drawing.Point(7, 80);
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.Size = new System.Drawing.Size(220, 54);
             this.btnTrangChu.TabIndex = 1;
@@ -179,7 +198,7 @@
             this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnLogo.Location = new System.Drawing.Point(0, 0);
             this.pnLogo.Name = "pnLogo";
-            this.pnLogo.Size = new System.Drawing.Size(220, 80);
+            this.pnLogo.Size = new System.Drawing.Size(235, 80);
             this.pnLogo.TabIndex = 0;
             // 
             // lblWelcome
@@ -193,9 +212,9 @@
             // pnlNoiDung
             // 
             this.pnlNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlNoiDung.Location = new System.Drawing.Point(220, 0);
+            this.pnlNoiDung.Location = new System.Drawing.Point(235, 0);
             this.pnlNoiDung.Name = "pnlNoiDung";
-            this.pnlNoiDung.Size = new System.Drawing.Size(783, 550);
+            this.pnlNoiDung.Size = new System.Drawing.Size(768, 550);
             this.pnlNoiDung.TabIndex = 1;
             // 
             // frmChucNang
@@ -227,5 +246,6 @@
         private System.Windows.Forms.Button btnHeThong;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Panel pnlNoiDung;
+        private System.Windows.Forms.Button btnDangXuat;
     }
 }

@@ -6,7 +6,7 @@ CREATE DATABASE QLDOANNHANH;
 GO
 
 USE QLDOANNHANH;
-GO
+GO  
 
 --------------------------------------------------
 -- 2️⃣ BẢNG NHÂN VIÊN

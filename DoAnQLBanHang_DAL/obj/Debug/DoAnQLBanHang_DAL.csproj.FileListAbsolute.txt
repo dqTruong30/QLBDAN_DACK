@@ -10,3 +10,15 @@ C:\C#\DoAn_LTWin\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.SqlServer.dll
 C:\C#\DoAn_LTWin\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.xml
 C:\C#\DoAn_LTWin\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\C#\DoAn_LTWin\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBa.54BFA5B9.Up2Date
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\bin\Debug\DoAnQLBanHang_DAL.dll.config
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\bin\Debug\DoAnQLBanHang_DAL.dll
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\bin\Debug\DoAnQLBanHang_DAL.pdb
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.dll
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.xml
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.csproj.AssemblyReference.cache
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.csproj.CoreCompileInputs.cache
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBa.54BFA5B9.Up2Date
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.dll
+C:\Users\vodon\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.pdb

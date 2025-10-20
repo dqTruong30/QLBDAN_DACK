@@ -18,12 +18,16 @@ namespace DoAnQLBanHang_GUI
         public frmChucNang()
         {
             InitializeComponent();
+			btnBanHang.Click += btnBanHang_Click;
+			btnKhachHang.Click += btnKhachHang_Click;
         }
 
 
         public frmChucNang(NHANVIEN user)
         {
             InitializeComponent();
+			btnBanHang.Click += btnBanHang_Click;
+			btnKhachHang.Click += btnKhachHang_Click;
             currentUser = user;
             if (currentUser.VaiTro != null && currentUser.VaiTro.Equals("Admin", StringComparison.OrdinalIgnoreCase))
             {
@@ -105,5 +109,18 @@ namespace DoAnQLBanHang_GUI
             frmKhoHang fKho = new frmKhoHang();
             LoadChildForm(fKho);
         }
+
+		private void btnBanHang_Click(object sender, EventArgs e)
+		{
+			var f = new frmBanHang(currentUser);
+			LoadChildForm(f);
+		}
+
+		private void btnKhachHang_Click(object sender, EventArgs e)
+		{
+			var f = new frmKhachHang();
+			LoadChildForm(f);
+		}
+
     }
 }
