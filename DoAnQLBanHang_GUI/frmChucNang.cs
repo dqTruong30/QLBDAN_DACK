@@ -122,5 +122,32 @@ namespace DoAnQLBanHang_GUI
 			LoadChildForm(f);
 		}
 
+        private void btnBanHang_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            var f  = new frmHoaDon();
+            LoadChildForm(f);
+        }
+
+        private void frmChucNang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+            var f = new frmSanPham();
+            this.Size = f.Size;
+            LoadChildForm(f);
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

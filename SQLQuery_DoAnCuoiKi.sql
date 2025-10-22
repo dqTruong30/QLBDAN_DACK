@@ -1,4 +1,9 @@
 ﻿
+
+
+
+
+
 --use master
 --drop database QLDOANNHANH
 
@@ -795,6 +800,7 @@ INSERT INTO NHANVIEN (TenNV, GioiTinh, NgaySinh, CCCD, DiaChi, SDT, TenDangNhap,
 (N'Võ Thành Dông', 'Nam', '1990-01-01', '123456789012', 'TP.HCM', '0123456789', 'admin', 'admin123', 'Admin'),
 (N'Đoàn Quí Trường', 'Nam', '1995-05-15', '234567890123', 'TP.HCM', '0987654321', 'thungan', 'thungan123', 'QuanLy'),
 (N'Trà Quang Vinh', 'Nam', '1998-08-20', '345678901234', 'TP.HCM', '0369258147', 'phucvu', 'phucvu123', 'NhanVien');
+
 
 -- Thêm đơn hàng đặt trước mẫu
 INSERT INTO DATHANGTRUOC (TenNguoiDat, SDTNguoiDat, NgayDat, ThoiGianGiao, DiaChiGiaoHang, TrangThai) VALUES

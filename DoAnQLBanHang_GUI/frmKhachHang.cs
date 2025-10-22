@@ -157,5 +157,10 @@ namespace DoAnQLBanHang_GUI
                 }
             }
         }
+
+        private void frmKhachHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

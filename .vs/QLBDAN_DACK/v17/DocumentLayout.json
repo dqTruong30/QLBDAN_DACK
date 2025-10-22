@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_BUS\\DoAnQLBanHang_BUS.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoAnQLBanHang_BUS\\DoAnQLBanHang_BUS.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoAnQLBanHang_GUI\\frmKhoHang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoAnQLBanHang_GUI\\frmKhoHang.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoAnQLBanHang_GUI\\frmKhoHang.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmSanPham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoAnQLBanHang_GUI\\frmSanPham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmSanPham.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoAnQLBanHang_GUI\\frmSanPham.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmBanHang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoAnQLBanHang_GUI\\frmBanHang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_BUS\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoAnQLBanHang_BUS\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmKhoHang.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.Designer.cs",
+              "RelativeDocumentMoniker": "DoAnQLBanHang_GUI\\frmKhoHang.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.Designer.cs",
+              "RelativeToolTip": "DoAnQLBanHang_GUI\\frmKhoHang.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:23:23.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmKhoHang.resx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.resx",
+              "RelativeDocumentMoniker": "DoAnQLBanHang_GUI\\frmKhoHang.resx",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.resx",
+              "RelativeToolTip": "DoAnQLBanHang_GUI\\frmKhoHang.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-21T04:23:21.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmSanPham.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmSanPham.cs",
+              "RelativeDocumentMoniker": "DoAnQLBanHang_GUI\\frmSanPham.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmSanPham.cs",
+              "RelativeToolTip": "DoAnQLBanHang_GUI\\frmSanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:23:19.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmSanPham.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmSanPham.Designer.cs",
+              "RelativeDocumentMoniker": "DoAnQLBanHang_GUI\\frmSanPham.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmSanPham.Designer.cs",
+              "RelativeToolTip": "DoAnQLBanHang_GUI\\frmSanPham.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:23:03.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmKhoHang.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.cs",
+              "RelativeDocumentMoniker": "DoAnQLBanHang_GUI\\frmKhoHang.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmKhoHang.cs",
+              "RelativeToolTip": "DoAnQLBanHang_GUI\\frmKhoHang.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:24:22.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmBanHang.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmBanHang.cs",
+              "RelativeDocumentMoniker": "DoAnQLBanHang_GUI\\frmBanHang.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_GUI\\frmBanHang.cs",
+              "RelativeToolTip": "DoAnQLBanHang_GUI\\frmBanHang.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:24:18.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_BUS\\Class1.cs",
+              "RelativeDocumentMoniker": "DoAnQLBanHang_BUS\\Class1.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_BUS\\Class1.cs",
+              "RelativeToolTip": "DoAnQLBanHang_BUS\\Class1.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:24:06.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoAnQLBanHang_BUS.csproj",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_BUS\\DoAnQLBanHang_BUS.csproj",
+              "RelativeDocumentMoniker": "DoAnQLBanHang_BUS\\DoAnQLBanHang_BUS.csproj",
+              "ToolTip": "C:\\Users\\ASUS\\Downloads\\QLBDAN_DACK\\DoAnQLBanHang_BUS\\DoAnQLBanHang_BUS.csproj",
+              "RelativeToolTip": "DoAnQLBanHang_BUS\\DoAnQLBanHang_BUS.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-20T15:23:59.412Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

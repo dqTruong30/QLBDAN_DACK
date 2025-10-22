@@ -244,5 +244,15 @@ namespace DoAnQLBanHang_GUI
             tb_diachi.Text = string.Empty;
             listView1.Items.Clear();
         }
+
+        private void btn_food_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmBanHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
