@@ -135,7 +135,13 @@ namespace DoAnQLBanHang_GUI
 
         private void frmChucNang_Load(object sender, EventArgs e)
         {
+            var frmHome = new frmTrangChu();
 
+            // Gửi thông tin người dùng hiện tại sang frmTrangChu (nếu bạn muốn hiển thị tên)
+            frmHome.CurrentUser = currentUser;
+
+            // Nạp form con vào panel
+            LoadChildForm(frmHome);
         }
 
         private void btnSanPham_Click(object sender, EventArgs e)
@@ -148,6 +154,22 @@ namespace DoAnQLBanHang_GUI
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pnLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            var t = new frmTrangChu();
+            t.CurrentUser = currentUser;
+            LoadChildForm(t);
+            /*
+            var t = new frmTrangChu();
+            this.Size = t.Size;
+            LoadChildForm(t);*/
         }
     }
 }

@@ -34,3 +34,15 @@ C:\Users\ASUS\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DA
 C:\Users\ASUS\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBa.54BFA5B9.Up2Date
 C:\Users\ASUS\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.dll
 C:\Users\ASUS\Downloads\QLBDAN_DACK\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.pdb
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\bin\Debug\DoAnQLBanHang_DAL.dll.config
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\bin\Debug\DoAnQLBanHang_DAL.dll
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\bin\Debug\DoAnQLBanHang_DAL.pdb
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.dll
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.xml
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.csproj.AssemblyReference.cache
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.csproj.CoreCompileInputs.cache
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBa.54BFA5B9.Up2Date
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.dll
+D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_DAL\obj\Debug\DoAnQLBanHang_DAL.pdb

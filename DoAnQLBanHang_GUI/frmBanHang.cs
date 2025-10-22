@@ -254,5 +254,10 @@ namespace DoAnQLBanHang_GUI
         {
 
         }
+
+        private void btn_deleteListview_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
