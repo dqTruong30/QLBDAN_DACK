@@ -13,6 +13,7 @@ namespace DoAnQLBanHang_GUI
 {
     public partial class frmChucNang : Form
     {
+
         private NHANVIEN currentUser;
         private readonly QLBDANmodel db = new QLBDANmodel();
         public frmChucNang()
@@ -89,7 +90,7 @@ namespace DoAnQLBanHang_GUI
             }
         }
 
-        private void LoadChildForm(Form childForm)
+        public void LoadChildForm(Form childForm)
         {
             // 1. Xóa tất cả các controls cũ trong panel
             this.pnlNoiDung.Controls.Clear();
@@ -108,6 +109,7 @@ namespace DoAnQLBanHang_GUI
         {
             frmKhoHang fKho = new frmKhoHang();
             LoadChildForm(fKho);
+            movedsidepanle(btnKhoHang);
         }
 
 		private void btnBanHang_Click(object sender, EventArgs e)
@@ -120,17 +122,20 @@ namespace DoAnQLBanHang_GUI
 		{
 			var f = new frmKhachHang();
 			LoadChildForm(f);
-		}
+            movedsidepanle(btnKhachHang);
+
+        }
 
         private void btnBanHang_Click_1(object sender, EventArgs e)
         {
-
+            movedsidepanle(btnBanHang);
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
             var f  = new frmHoaDon();
             LoadChildForm(f);
+            movedsidepanle(btnHoaDon);
         }
 
         private void frmChucNang_Load(object sender, EventArgs e)
@@ -146,14 +151,17 @@ namespace DoAnQLBanHang_GUI
 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
-            var f = new frmSanPham();
-            this.Size = f.Size;
+            var f = new frmSanPham();    
+            
             LoadChildForm(f);
+            movedsidepanle(btnSanPham);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-
+            var f = new frmThemNV();
+            LoadChildForm(f);
+            movedsidepanle(btnDangXuat);
         }
 
         private void pnLogo_Paint(object sender, PaintEventArgs e)
@@ -170,6 +178,31 @@ namespace DoAnQLBanHang_GUI
             var t = new frmTrangChu();
             this.Size = t.Size;
             LoadChildForm(t);*/
+            movedsidepanle(btnHome);
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void movedsidepanle(Button btn)
+        {
+            paAuto.Top =  btn.Top;
+            paAuto.Height = btn.Height;
+        }
+
+        private void btnHeThong_Click(object sender, EventArgs e)
+        {
+            var f = new frmThemNV();
+            LoadChildForm(f);
+            movedsidepanle(btnHeThong);
+
+        }
+
+        private void pnlNoiDung_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
