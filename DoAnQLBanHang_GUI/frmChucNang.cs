@@ -159,9 +159,10 @@ namespace DoAnQLBanHang_GUI
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
+            /*
             var f = new frmThemNV();
             LoadChildForm(f);
-            movedsidepanle(btnDangXuat);
+            movedsidepanle(btnDangXuat);*/
         }
 
         private void pnLogo_Paint(object sender, PaintEventArgs e)
@@ -194,9 +195,8 @@ namespace DoAnQLBanHang_GUI
 
         private void btnHeThong_Click(object sender, EventArgs e)
         {
-            var f = new frmThemNV();
+            var f = new frmHeThong(currentUser);
             LoadChildForm(f);
-            movedsidepanle(btnHeThong);
 
         }
 

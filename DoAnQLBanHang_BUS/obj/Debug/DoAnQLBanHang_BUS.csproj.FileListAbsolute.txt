@@ -58,3 +58,18 @@ D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBanHang_BUS.csproj.CoreC
 D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBa.CCEB6AF4.Up2Date
 D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBanHang_BUS.dll
 D:\QLBDAN_DACK - Lan3\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBanHang_BUS.pdb
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\DoAnQLBanHang_BUS.dll.config
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\DoAnQLBanHang_BUS.dll
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\DoAnQLBanHang_BUS.pdb
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\DoAnQLBanHang_DAL.dll
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\EntityFramework.dll
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\EntityFramework.SqlServer.dll
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\DoAnQLBanHang_DAL.pdb
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\DoAnQLBanHang_DAL.dll.config
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\EntityFramework.xml
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\bin\Debug\EntityFramework.SqlServer.xml
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBanHang_BUS.csproj.AssemblyReference.cache
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBanHang_BUS.csproj.CoreCompileInputs.cache
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBa.CCEB6AF4.Up2Date
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBanHang_BUS.dll
+D:\QLBDAN_DACK\DoAnQLBanHang_BUS\obj\Debug\DoAnQLBanHang_BUS.pdb

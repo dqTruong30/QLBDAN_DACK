@@ -63,6 +63,16 @@ namespace DoAnQLBanHang_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chiTietDoanhThu {
+            get {
+                object obj = ResourceManager.GetObject("chiTietDoanhThu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
@@ -76,6 +86,16 @@ namespace DoAnQLBanHang_GUI.Properties {
         internal static System.Drawing.Bitmap nhanvien {
             get {
                 object obj = ResourceManager.GetObject("nhanvien", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QuanLyDoanhThu {
+            get {
+                object obj = ResourceManager.GetObject("QuanLyDoanhThu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
