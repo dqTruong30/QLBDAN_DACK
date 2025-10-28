@@ -27,7 +27,11 @@ namespace DoAnQLBanHang_GUI
             if (CurrentUser != null)
             {
                 lblHoTen.Text = CurrentUser.TenNV;
+                lblHoTen.Font = new Font(lblHoTen.Font, FontStyle.Bold);
+                lblHoTen.Font = new Font(lblHoTen.Font.FontFamily, 14, FontStyle.Bold);
+
                 lblChucVu.Text = CurrentUser.VaiTro;
+                lblChucVu.Font = new Font(lblChucVu.Font.FontFamily, 14, FontStyle.Bold);
             }
             LoadDashboard();
         }
@@ -81,9 +85,7 @@ namespace DoAnQLBanHang_GUI
                          System.Data.Entity.DbFunctions.TruncateTime(hd.NgayLap.Value) == today);
                 lblHoaDonHomNay.Text = $"{tongHoaDonHomNay:N0}";
                 // === Hiển thị lên label ===
-                lblHomNay.Text = $"{doanhThuHomNay:N0} VND";
-                lblTuanNay.Text = $"{doanhThuTuan:N0} VND";
-                lblThangNay.Text = $"{doanhThuThang:N0} VND";
+               
 
             }
             catch (Exception ex)

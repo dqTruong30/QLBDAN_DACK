@@ -9,32 +9,45 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
+
 namespace DoAnQLBanHang_GUI
 {
     public partial class frmDoanhThu : Form
     {
         private readonly QLBDANmodel db = new QLBDANmodel();
+
         public frmDoanhThu()
         {
             InitializeComponent();
         }
 
-        private void btnTroVe_Click(object sender, EventArgs e)
+        private void frmDoanhThu_Load(object sender, EventArgs e)
         {
-            
-        }
+            loadNhanVien();
 
-        private void btnLamMoi_Click(object sender, EventArgs e)
-        {
+            cbbLoaiThongKe.Items.AddRange(new string[] { "Tất cả", "Theo ngày", "Theo tháng", "Theo năm" });
+            cbbLoaiThongKe.SelectedIndex = 0;
+
+            dtpTuNgay.Format = DateTimePickerFormat.Custom;
+            dtpTuNgay.CustomFormat = "dd/MM/yyyy";
+
+            dtpDenNgay.Format = DateTimePickerFormat.Custom;
+            dtpDenNgay.CustomFormat = "dd/MM/yyyy";
+
             dtpTuNgay.Value = DateTime.Today.AddDays(-7);
             dtpDenNgay.Value = DateTime.Today;
-            cbbLoaiThongKe.SelectedIndex = 0;
-            cbbNhanVien.SelectedIndex = -1;
-            dgvChiTietDoanhThu.DataSource = null;
 
-            lblTongDoanhThu.Text = "0 VNĐ";
-            lblSoHoaDon.Text = "0";
-            lblTrungBinhDon.Text = "0 VNĐ/đơn";
+            // Đổi nhãn label trung bình thành “Số đơn hàng/ngày”
+            lblTrungBinhDon.Text = "0 đơn/ngày";
+        }
+
+        private void loadNhanVien()
+        {
+            var dsNV = db.NHANVIENs.Select(nv => new { nv.MaNV, nv.TenNV }).ToList();
+            cbbNhanVien.DataSource = dsNV;
+            cbbNhanVien.DisplayMember = "TenNV";
+            cbbNhanVien.ValueMember = "MaNV";
+            cbbNhanVien.SelectedIndex = -1;
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
@@ -68,38 +81,55 @@ namespace DoAnQLBanHang_GUI
 
             dgvChiTietDoanhThu.DataSource = ds;
 
-            // Thống kê tổng
+            // === TÍNH TOÁN ===
             decimal tongDoanhThu = ds.Sum(h => h.TongTien ?? 0);
             int soHoaDon = ds.Count;
-            decimal trungBinh = soHoaDon > 0 ? tongDoanhThu / soHoaDon : 0;
+            double soNgay = (denNgay - tuNgay).TotalDays;
+            double donHangMoiNgay = soNgay > 0 ? soHoaDon / soNgay : 0;
 
+            // === HIỂN THỊ ===
             lblTongDoanhThu.Text = tongDoanhThu.ToString("N0") + " VNĐ";
             lblSoHoaDon.Text = soHoaDon.ToString();
-            lblTrungBinhDon.Text = trungBinh.ToString("N0") + " VNĐ/đơn";
+            lblTrungBinhDon.Text = donHangMoiNgay.ToString("0.##") + " đơn/ngày";
         }
 
-        private void frmDoanhThu_Load(object sender, EventArgs e)
+        private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            loadNhanVien();
-            cbbLoaiThongKe.Items.AddRange(new string[] { "Tất cả", "Theo ngày", "Theo tháng", "Theo năm" });
-            cbbLoaiThongKe.SelectedIndex = 0;
-
-            dtpTuNgay.Format = DateTimePickerFormat.Custom;
-            dtpTuNgay.CustomFormat = "dd/MM/yyyy";
-
-            dtpDenNgay.Format = DateTimePickerFormat.Custom;
-            dtpDenNgay.CustomFormat = "dd/MM/yyyy";
-
             dtpTuNgay.Value = DateTime.Today.AddDays(-7);
             dtpDenNgay.Value = DateTime.Today;
-        }
-        private void loadNhanVien()
-        {
-            var dsNV = db.NHANVIENs.Select(nv => new { nv.MaNV, nv.TenNV }).ToList();
-            cbbNhanVien.DataSource = dsNV;
-            cbbNhanVien.DisplayMember = "TenNV";
-            cbbNhanVien.ValueMember = "MaNV";
+            cbbLoaiThongKe.SelectedIndex = 0;
             cbbNhanVien.SelectedIndex = -1;
+            dgvChiTietDoanhThu.DataSource = null;
+
+            lblTongDoanhThu.Text = "0 VNĐ";
+            lblSoHoaDon.Text = "0";
+            lblTrungBinhDon.Text = "0 đơn/ngày";
+        }
+
+        private void btnTroVe_Click(object sender, EventArgs e)
+        {
+            Form parentForm = this.ParentForm;
+
+            if (parentForm is frmChucNang mainForm)
+            {
+                // Quay lại form frmHeThong trong frmChucNang
+                frmHeThong frmHT = new frmHeThong();
+                mainForm.LoadChildForm(frmHT);
+            }
+            else
+            {
+                // Trường hợp không có form cha (chạy độc lập)
+                this.Close();
+            }
+
+        }
+
+        private void lblTrungBinhDon_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }

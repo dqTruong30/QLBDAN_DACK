@@ -78,15 +78,13 @@ namespace DoAnQLBanHang_GUI
         {
             DateTime tuNgay = dtpTuNgay.Value.Date;
             DateTime denNgay = dtpDenNgay.Value.Date.AddDays(1);
-            string sdt = txtSDT.Text.Trim();
+            
 
             var query = db.HOADONs.AsQueryable();
 
             query = query.Where(hd => hd.NgayLap >= tuNgay && hd.NgayLap < denNgay);
 
-            if (!string.IsNullOrEmpty(sdt))
-                query = query.Where(hd => hd.KHACHHANG.SDT.Contains(sdt));
-
+            
             var list = query
                 .Select(hd => new
                 {

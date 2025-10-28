@@ -30,7 +30,6 @@ namespace DoAnQLBanHang_GUI
                 // Đổ dữ liệu vào combobox và datagridview
                 FillComboBox(listLoai);
                 BindGrid(listMon);
-                txtTimTen.TextChanged += (s, ev) => LocMonAn();
                 cbTimLoai.SelectedIndexChanged += (s, ev) => LocMonAn();
             }
             catch (Exception ex)
@@ -202,13 +201,12 @@ namespace DoAnQLBanHang_GUI
         {
             try
             {
-                string tenMon = txtTimTen.Text.Trim().ToLower();
                 int? maLoai = cbTimLoai.SelectedIndex >= 0 ? (int?)cbTimLoai.SelectedValue : null;
 
                 var ds = qLBDA.MONANs.AsQueryable();
 
-                if (!string.IsNullOrWhiteSpace(tenMon))
-                    ds = ds.Where(m => m.TenMon.ToLower().Contains(tenMon));
+                //if (!string.IsNullOrWhiteSpace(tenMon))
+                    //ds = ds.Where(m => m.TenMon.ToLower().Contains(tenMon));
 
                 if (maLoai.HasValue)
                     ds = ds.Where(m => m.MaLoai == maLoai.Value);
@@ -231,13 +229,13 @@ namespace DoAnQLBanHang_GUI
         {
             try
             {
-                string tenMon = txtTimTen.Text.Trim().ToLower();
+                //string tenMon = txtTimTen.Text.Trim().ToLower();
                 int? maLoai = cbTimLoai.SelectedIndex >= 0 ? (int?)cbTimLoai.SelectedValue : null;
 
                 var ds = qLBDA.MONANs.AsQueryable();
 
-                if (!string.IsNullOrEmpty(tenMon))
-                    ds = ds.Where(m => m.TenMon.ToLower().Contains(tenMon));
+                //if (!string.IsNullOrEmpty(tenMon))
+                    //ds = ds.Where(m => m.TenMon.ToLower().Contains(tenMon));
 
                 if (maLoai.HasValue)
                     ds = ds.Where(m => m.MaLoai == maLoai.Value);
@@ -248,6 +246,11 @@ namespace DoAnQLBanHang_GUI
             {
                 MessageBox.Show("Lỗi khi lọc dữ liệu: " + ex.Message);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -159,10 +159,23 @@ namespace DoAnQLBanHang_GUI
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            /*
-            var f = new frmThemNV();
-            LoadChildForm(f);
-            movedsidepanle(btnDangXuat);*/
+            var result = MessageBox.Show("Bạn có chắc muốn đăng xuất không?", "Xác nhận",
+         MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Nếu muốn đảm bảo rằng bất kỳ form con nào trong pnlNoiDung được dispose:
+                foreach (Control c in pnlNoiDung.Controls)
+                {
+                    if (c is Form f)
+                    {
+                        try { f.Close(); f.Dispose(); } catch { }
+                    }
+                }
+
+                // Đóng frmChucNang để trả về frmDangNhap (ShowDialog sẽ kết thúc)
+                this.Close();
+            }
         }
 
         private void pnLogo_Paint(object sender, PaintEventArgs e)
@@ -196,7 +209,9 @@ namespace DoAnQLBanHang_GUI
         private void btnHeThong_Click(object sender, EventArgs e)
         {
             var f = new frmHeThong(currentUser);
+            movedsidepanle(btnHeThong);
             LoadChildForm(f);
+
 
         }
 

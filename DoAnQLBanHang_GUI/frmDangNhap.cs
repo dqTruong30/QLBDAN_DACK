@@ -31,7 +31,6 @@ namespace DoAnQLBanHang_GUI
             string username = txtTaiKhoan.Text.Trim();
             string password = txtMatKhau.Text.Trim();
 
-            // 1️⃣ Kiểm tra dữ liệu đầu vào
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ tài khoản và mật khẩu!",
@@ -41,23 +40,24 @@ namespace DoAnQLBanHang_GUI
 
             try
             {
-                // 2️⃣ Tìm nhân viên theo tài khoản và mật khẩu (dùng Entity Framework)
                 var user = db.NHANVIENs
                              .FirstOrDefault(u => u.TenDangNhap == username && u.MatKhau == password);
 
-                // 3️⃣ Kiểm tra kết quả
                 if (user != null)
                 {
-                    MessageBox.Show("Đăng nhập thành công!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    // Ẩn form đăng nhập, mở form chức năng chính
                     this.Hide();
-                    frmChucNang mainForm = new frmChucNang(user); // truyền thông tin người dùng
-                    mainForm.ShowDialog();
 
-                    // Khi form chính đóng, thoát hẳn ứng dụng
-                    Application.Exit();
+                    // Sử dụng using để đảm bảo dispose form con
+                    using (frmChucNang mainForm = new frmChucNang(user))
+                    {
+                        mainForm.ShowDialog();
+                    }
+
+                    // Khi frmChucNang đóng (người dùng đăng xuất hoặc đóng), hiện lại frmDangNhap
+                    this.Show();
+
+                    // (Tùy chọn) Xóa mật khẩu/clear các ô để bảo mật
+                    txtMatKhau.Clear();
                 }
                 else
                 {

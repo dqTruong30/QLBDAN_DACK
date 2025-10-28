@@ -314,7 +314,19 @@ namespace DoAnQLBanHang_GUI
 
         private void btnTroVe_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form parentForm = this.ParentForm;
+
+            if (parentForm is frmChucNang mainForm)
+            {
+                // Quay lại form frmHeThong trong frmChucNang
+                frmHeThong frmHT = new frmHeThong();
+                mainForm.LoadChildForm(frmHT);
+            }
+            else
+            {
+                // Trường hợp không có form cha (chạy độc lập)
+                this.Close();
+            }
         }
         private void HandleFilterChanged(object sender, EventArgs e)
         {

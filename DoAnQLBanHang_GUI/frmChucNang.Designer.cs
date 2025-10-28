@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnTrangChu = new System.Windows.Forms.Panel();
+            this.btnHoaDon = new System.Windows.Forms.Button();
             this.paAuto = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnHome = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.pnLogo = new System.Windows.Forms.Panel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnHeThong = new System.Windows.Forms.Button();
-            this.btnHoaDon = new System.Windows.Forms.Button();
             this.btnKhoHang = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
@@ -49,30 +49,48 @@
             // pnTrangChu
             // 
             this.pnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.pnTrangChu.Controls.Add(this.btnHoaDon);
             this.pnTrangChu.Controls.Add(this.paAuto);
             this.pnTrangChu.Controls.Add(this.linkLabel1);
             this.pnTrangChu.Controls.Add(this.btnHome);
             this.pnTrangChu.Controls.Add(this.btnDangXuat);
             this.pnTrangChu.Controls.Add(this.pnLogo);
             this.pnTrangChu.Controls.Add(this.btnHeThong);
-            this.pnTrangChu.Controls.Add(this.btnHoaDon);
             this.pnTrangChu.Controls.Add(this.btnKhoHang);
             this.pnTrangChu.Controls.Add(this.btnKhachHang);
             this.pnTrangChu.Controls.Add(this.btnBanHang);
             this.pnTrangChu.Controls.Add(this.btnSanPham);
             this.pnTrangChu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnTrangChu.Location = new System.Drawing.Point(0, 0);
-            this.pnTrangChu.Margin = new System.Windows.Forms.Padding(2);
+            this.pnTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnTrangChu.Name = "pnTrangChu";
-            this.pnTrangChu.Size = new System.Drawing.Size(176, 527);
+            this.pnTrangChu.Size = new System.Drawing.Size(221, 649);
             this.pnTrangChu.TabIndex = 0;
+            // 
+            // btnHoaDon
+            // 
+            this.btnHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.btnHoaDon.FlatAppearance.BorderSize = 0;
+            this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoaDon.Location = new System.Drawing.Point(22, 257);
+            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHoaDon.Name = "btnHoaDon";
+            this.btnHoaDon.Size = new System.Drawing.Size(196, 48);
+            this.btnHoaDon.TabIndex = 4;
+            this.btnHoaDon.Text = "🧾 Hoá Đơn";
+            this.btnHoaDon.UseVisualStyleBackColor = false;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // paAuto
             // 
             this.paAuto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(32)))), ((int)(((byte)(20)))));
-            this.paAuto.Location = new System.Drawing.Point(3, 63);
+            this.paAuto.Location = new System.Drawing.Point(4, 78);
+            this.paAuto.Margin = new System.Windows.Forms.Padding(4);
             this.paAuto.Name = "paAuto";
-            this.paAuto.Size = new System.Drawing.Size(10, 46);
+            this.paAuto.Size = new System.Drawing.Size(13, 57);
             this.paAuto.TabIndex = 0;
             this.paAuto.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -80,9 +98,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(21, 468);
+            this.linkLabel1.Location = new System.Drawing.Point(28, 576);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(101, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(119, 16);
             this.linkLabel1.TabIndex = 11;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "hotline:0867692050";
@@ -92,13 +111,13 @@
             this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(9, 63);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Location = new System.Drawing.Point(24, 77);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(176, 45);
+            this.btnHome.Size = new System.Drawing.Size(197, 55);
             this.btnHome.TabIndex = 10;
             this.btnHome.Text = "🏚 Trang Chủ";
             this.btnHome.UseVisualStyleBackColor = false;
@@ -109,13 +128,13 @@
             this.btnDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.btnDangXuat.FlatAppearance.BorderSize = 0;
             this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangXuat.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.ForeColor = System.Drawing.Color.Transparent;
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(11, 384);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDangXuat.Location = new System.Drawing.Point(22, 470);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(176, 39);
+            this.btnDangXuat.Size = new System.Drawing.Size(199, 48);
             this.btnDangXuat.TabIndex = 9;
             this.btnDangXuat.Text = " ⏻ Đăng Xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
@@ -127,9 +146,9 @@
             this.pnLogo.Controls.Add(this.lblWelcome);
             this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pnLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnLogo.Name = "pnLogo";
-            this.pnLogo.Size = new System.Drawing.Size(176, 59);
+            this.pnLogo.Size = new System.Drawing.Size(221, 73);
             this.pnLogo.TabIndex = 0;
             this.pnLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnLogo_Paint);
             // 
@@ -138,10 +157,9 @@
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWelcome.Location = new System.Drawing.Point(9, 24);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(12, 30);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 15);
+            this.lblWelcome.Size = new System.Drawing.Size(0, 18);
             this.lblWelcome.TabIndex = 0;
             // 
             // btnHeThong
@@ -149,47 +167,30 @@
             this.btnHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.btnHeThong.FlatAppearance.BorderSize = 0;
             this.btnHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHeThong.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHeThong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHeThong.ForeColor = System.Drawing.Color.White;
             this.btnHeThong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHeThong.Location = new System.Drawing.Point(12, 339);
-            this.btnHeThong.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHeThong.Location = new System.Drawing.Point(22, 416);
+            this.btnHeThong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHeThong.Name = "btnHeThong";
-            this.btnHeThong.Size = new System.Drawing.Size(176, 41);
+            this.btnHeThong.Size = new System.Drawing.Size(199, 50);
             this.btnHeThong.TabIndex = 7;
             this.btnHeThong.Text = "⚙️ Hệ Thống";
             this.btnHeThong.UseVisualStyleBackColor = false;
             this.btnHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
-            // 
-            // btnHoaDon
-            // 
-            this.btnHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btnHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoaDon.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoaDon.Location = new System.Drawing.Point(9, 253);
-            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(2);
-            this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.Size = new System.Drawing.Size(176, 39);
-            this.btnHoaDon.TabIndex = 4;
-            this.btnHoaDon.Text = "🧾 Hoá Đơn";
-            this.btnHoaDon.UseVisualStyleBackColor = false;
-            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // btnKhoHang
             // 
             this.btnKhoHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.btnKhoHang.FlatAppearance.BorderSize = 0;
             this.btnKhoHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhoHang.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhoHang.ForeColor = System.Drawing.Color.White;
             this.btnKhoHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhoHang.Location = new System.Drawing.Point(11, 296);
-            this.btnKhoHang.Margin = new System.Windows.Forms.Padding(2);
+            this.btnKhoHang.Location = new System.Drawing.Point(22, 364);
+            this.btnKhoHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKhoHang.Name = "btnKhoHang";
-            this.btnKhoHang.Size = new System.Drawing.Size(176, 39);
+            this.btnKhoHang.Size = new System.Drawing.Size(199, 48);
             this.btnKhoHang.TabIndex = 6;
             this.btnKhoHang.Text = "📦 Kho Hàng";
             this.btnKhoHang.UseVisualStyleBackColor = false;
@@ -200,13 +201,13 @@
             this.btnKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.btnKhachHang.FlatAppearance.BorderSize = 0;
             this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhachHang.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachHang.ForeColor = System.Drawing.Color.White;
             this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.Location = new System.Drawing.Point(9, 160);
-            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(2);
+            this.btnKhachHang.Location = new System.Drawing.Point(31, 196);
+            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(178, 46);
+            this.btnKhachHang.Size = new System.Drawing.Size(187, 57);
             this.btnKhachHang.TabIndex = 3;
             this.btnKhachHang.Text = "👥 Khách Hàng";
             this.btnKhachHang.UseVisualStyleBackColor = false;
@@ -217,13 +218,13 @@
             this.btnBanHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.btnBanHang.FlatAppearance.BorderSize = 0;
             this.btnBanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBanHang.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBanHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBanHang.ForeColor = System.Drawing.Color.White;
             this.btnBanHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBanHang.Location = new System.Drawing.Point(11, 112);
-            this.btnBanHang.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBanHang.Location = new System.Drawing.Point(24, 138);
+            this.btnBanHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBanHang.Name = "btnBanHang";
-            this.btnBanHang.Size = new System.Drawing.Size(176, 44);
+            this.btnBanHang.Size = new System.Drawing.Size(197, 54);
             this.btnBanHang.TabIndex = 2;
             this.btnBanHang.Text = "🛒 Bán Hàng";
             this.btnBanHang.UseVisualStyleBackColor = false;
@@ -234,13 +235,13 @@
             this.btnSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.btnSanPham.FlatAppearance.BorderSize = 0;
             this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSanPham.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanPham.Location = new System.Drawing.Point(9, 210);
-            this.btnSanPham.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSanPham.Location = new System.Drawing.Point(22, 312);
+            this.btnSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Size = new System.Drawing.Size(176, 39);
+            this.btnSanPham.Size = new System.Drawing.Size(199, 48);
             this.btnSanPham.TabIndex = 5;
             this.btnSanPham.Text = "🍽️ Thực đơn";
             this.btnSanPham.UseVisualStyleBackColor = false;
@@ -249,22 +250,22 @@
             // pnlNoiDung
             // 
             this.pnlNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlNoiDung.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlNoiDung.Location = new System.Drawing.Point(176, 0);
-            this.pnlNoiDung.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlNoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlNoiDung.Location = new System.Drawing.Point(221, 0);
+            this.pnlNoiDung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlNoiDung.Name = "pnlNoiDung";
-            this.pnlNoiDung.Size = new System.Drawing.Size(1084, 527);
+            this.pnlNoiDung.Size = new System.Drawing.Size(1459, 649);
             this.pnlNoiDung.TabIndex = 1;
             this.pnlNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlNoiDung_Paint);
             // 
             // frmChucNang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 527);
+            this.ClientSize = new System.Drawing.Size(1680, 649);
             this.Controls.Add(this.pnlNoiDung);
             this.Controls.Add(this.pnTrangChu);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmChucNang";
             this.Text = "Chức Năng";
             this.Load += new System.EventHandler(this.frmChucNang_Load);

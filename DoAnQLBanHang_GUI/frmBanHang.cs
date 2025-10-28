@@ -46,6 +46,10 @@ namespace DoAnQLBanHang_GUI
                 listView1.Columns.Add("Thành tiền", 120);
             }
 
+            tb_name.Enabled = false;
+            tb_sdt.Enabled = false;
+            tb_diachi.Enabled = false;
+
             ResolveLoaiIds();
             LoadDataByLoaiId(null);
         }
@@ -137,6 +141,17 @@ namespace DoAnQLBanHang_GUI
 
         private void btn_inhoadon_Click(object sender, EventArgs e)
         {
+            if (tb_name.Enabled) // chỉ kiểm tra khi đang ở chế độ online
+            {
+                if (string.IsNullOrWhiteSpace(tb_name.Text) ||
+                    string.IsNullOrWhiteSpace(tb_sdt.Text) ||
+                    string.IsNullOrWhiteSpace(tb_diachi.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin khách hàng trước khi in hoá đơn.",
+                        "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             if (listView1.Items.Count == 0)
             {
                 MessageBox.Show("Vui lòng thêm món vào danh sách trước khi in hoá đơn.",
@@ -243,21 +258,41 @@ namespace DoAnQLBanHang_GUI
             tb_sdt.Text = string.Empty;
             tb_diachi.Text = string.Empty;
             listView1.Items.Clear();
+
         }
 
-        private void btn_food_Click_1(object sender, EventArgs e)
+        private bool isOnlineMode = false;
+
+        private void btn_online_Click(object sender, EventArgs e)
         {
+            // Đảo trạng thái mỗi lần nhấn nút
+            isOnlineMode = !isOnlineMode;
 
+            // Nếu đang bật chế độ online
+            if (isOnlineMode)
+            {
+                tb_name.Enabled = true;
+                tb_sdt.Enabled = true;
+                tb_diachi.Enabled = true;
+
+                // Có thể đổi màu nút để dễ nhận biết
+                btn_online.Text = "Tắt nhập thông tin online";
+                MessageBox.Show("Đã bật chế độ nhập thông tin khách hàng online!",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                tb_name.Enabled = false;
+                tb_sdt.Enabled = false;
+                tb_diachi.Enabled = false;
+
+                btn_online.Text = "Đơn Online";
+                MessageBox.Show("Đã tắt chế độ nhập thông tin khách hàng online!",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
+            }
         }
 
-        private void frmBanHang_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_deleteListview_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

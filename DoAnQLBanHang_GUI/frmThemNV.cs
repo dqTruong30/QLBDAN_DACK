@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO; // Thêm dòng này
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Reflection;
+using System.IO;
+
 
 namespace DoAnQLBanHang_GUI
 {
@@ -21,11 +25,7 @@ namespace DoAnQLBanHang_GUI
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void button4_Click(object sender, EventArgs e)
         {
             txtTimKiem.Text = "";
@@ -122,9 +122,13 @@ namespace DoAnQLBanHang_GUI
                 }
                 else if (rMK.Contains(relX, relY))
                 {
-                    // (Code MK của bạn)
-                    MessageBox.Show("Chức năng đổi mật khẩu");
+                    frmSuMk suaMK = new frmSuMk(maNV);
+                    if (suaMK.ShowDialog() == DialogResult.OK)
+                    {
+                        LoadData(); // Reload danh sách nhân viên
+                    }
                 }
+
                 else if (rKhoa.Contains(relX, relY))
                 {
                     // (Code Khóa của bạn)
@@ -185,6 +189,7 @@ namespace DoAnQLBanHang_GUI
 
                 qLBDA.SaveChanges();
                 MessageBox.Show("✅ Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
             catch (Exception ex)
             {
@@ -244,6 +249,93 @@ namespace DoAnQLBanHang_GUI
         private void FilterControls_Changed(object sender, EventArgs e)
         {
             LoadData(); // Gọi lại LoadData khi chọn ComboBox
+        }
+
+        private void btn_xuatexcel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // 1️⃣ Khởi tạo Excel
+                Excel.Application excelApp = new Excel.Application();
+                excelApp.Visible = false; // Ẩn Excel trong lúc xuất
+
+                Excel.Workbook workbook = excelApp.Workbooks.Add(Missing.Value);
+                Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Sheets[1];
+                worksheet.Name = "DanhSachNhanVien";
+
+                // 2️⃣ Ghi tiêu đề cột
+                for (int i = 0; i < dataGridView1.Columns.Count; i++)
+                {
+                    worksheet.Cells[1, i + 1] = dataGridView1.Columns[i].HeaderText;
+                    ((Excel.Range)worksheet.Cells[1, i + 1]).Font.Bold = true;
+                    ((Excel.Range)worksheet.Cells[1, i + 1]).Interior.Color = Color.LightYellow;
+                }
+
+                // 3️⃣ Ghi dữ liệu từ DataGridView
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value?.ToString();
+                    }
+                }
+
+                // 4️⃣ Tự động điều chỉnh độ rộng cột
+                worksheet.Columns.AutoFit();
+
+                // 5️⃣ Chọn nơi lưu file
+                SaveFileDialog saveFile = new SaveFileDialog();
+                saveFile.Filter = "Excel file (*.xlsx)|*.xlsx";
+                saveFile.Title = "Lưu danh sách nhân viên";
+                saveFile.FileName = "DanhSachNhanVien.xlsx";
+
+                if (saveFile.ShowDialog() == DialogResult.OK)
+                {
+                    string path = saveFile.FileName;
+                    workbook.SaveAs(path);
+                    workbook.Close();
+                    excelApp.Quit();
+
+                    MessageBox.Show("✅ Xuất Excel thành công!\nĐường dẫn: " + path,
+                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Mở file sau khi xuất xong
+                    if (File.Exists(path))
+                        System.Diagnostics.Process.Start(path);
+                }
+                else
+                {
+                    workbook.Close(false);
+                    excelApp.Quit();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("❌ Lỗi khi xuất Excel: " + ex.Message,
+                    "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Form parentForm = this.ParentForm;
+
+            if (parentForm is frmChucNang mainForm)
+            {
+                // Quay lại form frmHeThong trong frmChucNang
+                frmHeThong frmHT = new frmHeThong();
+                mainForm.LoadChildForm(frmHT);
+            }
+            else
+            {
+                // Trường hợp không có form cha (chạy độc lập)
+                this.Close();
+            }
         }
 
         private void LoadData()
