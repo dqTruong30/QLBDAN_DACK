@@ -101,5 +101,20 @@ namespace DoAnQLBanHang_GUI
                 mainForm.LoadChildForm(frmDT); // Gọi hàm có sẵn trong frmChucNang
             }
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLuongNhanVien_Click(object sender, EventArgs e)
+        {
+            Form parentForm = this.ParentForm;
+            if (parentForm is frmChucNang mainForm)
+            {
+                frmTinhLuong frmTL = new frmTinhLuong();
+                mainForm.LoadChildForm(frmTL); // Gọi hàm có sẵn trong frmChucNang
+            }
+        }
     }
 }

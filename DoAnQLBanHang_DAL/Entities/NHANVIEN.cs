@@ -60,5 +60,6 @@ namespace DoAnQLBanHang_DAL.Entities
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NhatKyHeThong> NhatKyHeThongs { get; set; }
+        public object CHUCVU { get; set; }
     }
 }
